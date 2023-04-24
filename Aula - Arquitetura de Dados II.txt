@@ -1,0 +1,4 @@
+Aula - Arquitetura de Dados II
+Aluno - João Marcos Castro dos Santos
+
+Repositório - https://github.com/joaocika93/arquitetura_dados_II_senac/tree/master/to_do_list

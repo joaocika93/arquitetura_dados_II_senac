@@ -12,7 +12,7 @@ class Task:
         self.name = name
 
     def get_date(self):
-        return self.date
+        return self.date.string
 
     def set_date(self, date):
         self.date = date

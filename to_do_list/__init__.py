@@ -14,33 +14,33 @@ def main_menu():
     print('(7) Remove task done')
     print('(8) View Tasks')
     print('(Any others) Exit')
-    m = int(input("Option: "))
+    m = input("Option: ")
     return switch_main_menu(m)
 
 
 def switch_main_menu(m):
-    if m == 1:
+    if m == '1':
         task_service.insert_task(task_list)
         return True
-    elif m == 2:
+    elif m == '2':
         task_service.delete_task_by_name(task_list)
         return True
-    elif m == 3:
+    elif m == '3':
         task_service.update_task_by_name(task_list)
         return True
-    elif m == 4:
-        task_service.search_task_by_name(task_list, '4')
+    elif m == '4':
+        task_service.search_task_by_name(task_list)
         return True
-    elif m == 5:
+    elif m == '5':
         task_service.search_task_by_date(task_list)
         return True
-    elif m == 6:
+    elif m == '6':
         task_service.mark_task_done(task_list)
         return True
-    elif m == 7:
+    elif m == '7':
         task_service.remove_tasks_done(task_list)
         return True
-    elif m == 8:
+    elif m == '8':
         task_service.list_task(task_list)
         return True
     else:
